@@ -24,11 +24,17 @@ def title_case(sentence):
     >>> title_case('ThIS iS a StrInG to BE ConverTed.')
         'This Is A String To Be Converted.'
     """
-   
+    if not isinstance(sentence, str):
+        raise TypeError('Invalid input %s -Input must be type string' %(sentence))
+
+    # Error if empty string
+    if len(sentence) == 0:
+        raise TypeError('Cannot appy title function to empty string')
+
     ret = sentence[0].upper()
 
     for i in range(1, len(sentence)):
-        if sentence[i - 1] == ' ';
+        if sentence[i - 1] == ' ':
             ret += sentence[i].upper()
         else:
             ret += sentence[i].lower()
