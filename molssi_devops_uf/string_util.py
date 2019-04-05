@@ -29,7 +29,7 @@ def title_case(sentence):
 
     # Error if empty string
     if len(sentence) == 0:
-        raise TypeError('Cannot appy title function to empty string')
+        raise TypeError('Cannot apply title function to empty string')
 
     ret = sentence[0].upper()
 
