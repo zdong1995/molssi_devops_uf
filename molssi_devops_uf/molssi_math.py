@@ -5,6 +5,7 @@ Workshop
 Handles the primary functions
 """
 
+
 def mean(num_list):
     """
     Calculate the mean/average of a list of numbers
@@ -19,7 +20,7 @@ def mean(num_list):
     mean_list : float
         The mean of the list
     """
-    mean_list = sum(num_list)/len(num_list)
+    mean_list = sum(num_list) / len(num_list)
 
     return mean
 
