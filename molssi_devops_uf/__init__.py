@@ -4,7 +4,8 @@ Workshop
 """
 
 # Add imports here
-from .molssi_devops_uf import *
+from .molssi_math import *
+from .string_util import *
 
 # Handle versioneer
 from ._version import get_versions
