@@ -15,7 +15,7 @@ def test_many(num_list, expected_mean):
     assert md_uf.mean(num_list) == expected_mean
 
 def test_mean():
-    num_list = [1, 2, 3, 4, 5]
+    num_list = [1, 2, 4, 5]
     observed = md_uf.mean(num_list)
     expected = 3
 
